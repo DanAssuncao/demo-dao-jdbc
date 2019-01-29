@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70e69892-3465-43a1-9a6f-630159cb4a56" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/model/dao/DepartmentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/dao/SellerDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/dao/DaoFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/dao/impl/SellerDaoJDBC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/application/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="238">
+              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -33,11 +34,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/dao/SellerDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="17">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/dao/impl/SellerDaoJDBC.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/dao/DaoFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -74,8 +93,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -88,9 +107,11 @@
         <option value="$PROJECT_DIR$/db.properties" />
         <option value="$PROJECT_DIR$/src/model/entities/Department.java" />
         <option value="$PROJECT_DIR$/src/model/entities/Seller.java" />
-        <option value="$PROJECT_DIR$/src/application/Main.java" />
         <option value="$PROJECT_DIR$/src/model/dao/DepartmentDao.java" />
         <option value="$PROJECT_DIR$/src/model/dao/SellerDao.java" />
+        <option value="$PROJECT_DIR$/src/model/dao/impl/SellerDaoJDBC.java" />
+        <option value="$PROJECT_DIR$/src/model/dao/DaoFactory.java" />
+        <option value="$PROJECT_DIR$/src/application/Main.java" />
       </list>
     </option>
   </component>
@@ -146,6 +167,14 @@
             </path>
             <path>
               <item name="demo-dao-jdbc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo-dao-jdbc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo-dao-jdbc" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -155,7 +184,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548764627149" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548765296979" />
     <property name="last_opened_file_path" value="C:/JavaTeste/Java-libs/jdbc-connectors/mysql-connector-java-5.1.47.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -270,10 +299,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/model/dao/impl/SellerDaoJDBC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/dao/DaoFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/dao/SellerDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
@@ -284,10 +327,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/dao/SellerDao.java">
+    <entry file="file://$PROJECT_DIR$/src/application/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
         </state>
       </provider>
     </entry>
